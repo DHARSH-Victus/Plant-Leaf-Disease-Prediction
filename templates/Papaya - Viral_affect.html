@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
+        integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+
+    <title>PAPAYA VIRAL DISEASE PREDICTION</title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .border img {
+            border-radius: 15px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body background="{{url_for('static',filename = 'images/Back.jpg')}}">
+
+    <div>
+        <h1 style="text-align:center;font-size:4rem">Predict Papaya Viral Disease & Get Cure</h1>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="container my-2">
+        <div class="row mb-5">
+
+            <div class="col-sm" style="margin-bottom: 23px;">
+                <span class="border border-primary">
+                    <img src="{{ url_for('static', filename='upload/' + user_image.split('/')[-1]) }}" alt="User Image" style="width:500px;height:500px;">
+                </span>
+            </div>
+
+            <div class="col-sm">
+
+                <div>
+                    <h1 style="padding: 15px; background-color: rgb(15, 15, 15); color: white;"
+                        class="text-center mb-5 content-h1 rounded">
+                        {{pred_output}} </h1>
+                </div>
+                <div class="details">
+                    <h4><b> Treatment : </b> </h4>
+                    <h6>
+                        Viral diseases in papaya plants, such as Papaya Ringspot Virus, can be controlled by removing infected plants and controlling aphid vectors. Use virus-free planting materials and practice crop rotation. Apply insecticides to manage pests and install physical barriers like netting to protect the plants.
+                        The yellow spots on the papaya leaf in the image are likely caused by papaya ringspot virus (PRSV). This is a common viral disease that affects papaya plants and can cause significant damage.   
+
+Unfortunately, there is no cure for PRSV. Once a plant is infected, it will remain infected for life. However, there are several things you can do to manage the disease and prevent its spread:
+
+Prevention:
+
+Plant virus-resistant varieties: If available in your area, plant papaya varieties that are resistant to PRSV.
+Sanitation: Keep your garden clean and free of debris. Remove any infected plants immediately and destroy them.   
+Vector control: PRSV is spread by aphids, so controlling these pests can help reduce the spread of the virus. You can use insecticidal soap or neem oil to control aphids.   
+Crop rotation: Do not plant papaya in the same location where infected plants were previously grown. This can help reduce the buildup of the virus in the soil.
+Management:
+
+Fertilization: Fertilize your papaya plants regularly to keep them healthy and strong. This can help them better tolerate the effects of PRSV.   
+Watering: Water your papaya plants deeply and regularly. This will help them to stay hydrated and healthy.
+Pruning: Prune away any infected leaves or branches. This can help to slow the spread of the virus.
+If you have a large number of papaya plants that are infected with PRSV, you may want to consider removing them and starting over with healthy, virus-free plants.
+
+It is important to note that PRSV can also infect other plants, such as cucurbits (squash, cucumbers, etc.), so it is important to monitor these plants for symptoms as well.   
+
+Here are some additional tips for preventing and managing PRSV:
+
+Plant papaya in well-drained soil.   
+Avoid planting papaya in areas with high aphid populations.
+Monitor your papaya plants regularly for signs of PRSV.
+If you see any signs of PRSV, take action immediately to prevent the spread of the virus.
+                    </h6>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

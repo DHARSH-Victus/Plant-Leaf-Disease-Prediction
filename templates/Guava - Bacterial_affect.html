@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
+        integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+
+    <title>GUAVA BACTERIAL DISEASE PREDICTION</title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .border img {
+            border-radius: 15px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body background="{{url_for('static',filename = 'images/Back.jpg')}}">
+
+    <div>
+        <h1 style="text-align:center;font-size:4rem">Predict Guava Bacterial Disease & Get Cure</h1>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="container my-2">
+        <div class="row mb-5">
+
+            <div class="col-sm" style="margin-bottom: 23px;">
+                <span class="border border-primary">
+                    <img src="{{ url_for('static', filename='upload/' + user_image.split('/')[-1]) }}" alt="User Image" style="width:500px;height:500px;">>
+                </span>
+            </div>
+
+            <div class="col-sm">
+
+                <div>
+                    <h1 style="padding: 15px; background-color: rgb(15, 15, 15); color: white;"
+                        class="text-center mb-5 content-h1 rounded">
+                        {{pred_output}} </h1>
+                </div>
+                <div class="details">
+                    <h4><b> Treatment : </b> </h4>
+                    <h6>
+
+
+
+                        Bacterial diseases in guava plants can be managed by applying copper-based fungicides and ensuring proper field sanitation. Remove and destroy infected leaves or fruits. Avoid overwatering, and ensure proper drainage to prevent bacterial spread. For severe cases, consult a local agricultural expert.
+                        1. Remove Infected Leaves:
+
+Remove any leaves that are heavily infected with rust.   
+Dispose of the infected leaves properly, either by burning them or bagging them and throwing them away.
+2. Fungicide Treatment:
+
+Apply a fungicide that is labeled for use on guava and rust control.
+Follow the instructions on the product label carefully.
+You may need to repeat the treatment every 7-10 days for several weeks to control the infection.
+3. Improve Air Circulation:
+
+Prune your guava plant to improve air circulation around the leaves.   
+This will help to reduce the humidity around the plant, making it less favorable for fungal growth.
+4. Avoid Overhead Watering:
+
+Water your guava plant at the base, avoiding getting the leaves wet.   
+Wet leaves can create a favorable environment for fungal growth.   
+5. Plant Health:
+
+Ensure your guava plant is healthy and well-nourished.
+A healthy plant is better able to resist diseases.
+Preventive Measures:
+
+Plant Resistant Varieties: If available, choose guava varieties that are resistant to rust.
+Sanitation: Keep your garden clean and free of debris.
+Avoid Overcrowding: Space your plants properly to allow for good air circulation.   
+Rotate Crops: Do not plant guava in the same location where infected plants were previously grown.
+By following these steps, you should be able to control the rust infection and keep your guava plant healthy.
+
+Additional Tips:
+
+Monitor your guava plant regularly for signs of rust.
+If you see any new spots or lesions, take action immediately.
+Keep your tools clean and disinfected.
+
+                    </h6>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
